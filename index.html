@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Srisakdi:wght@400;700&display=swap');  
+
+        body {
+            font-family: 'Srisakdi', cursive;
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="bg-[#BF1A2F] z-50 fixed p-3 flex items-center justify-between" style="width: 100%;">
+            <img src="./image/logo.png" alt="logo" width="300" height="69" />
+
+            <ul class="flex text-[#ECC8AF] gap-10">
+                <li>
+                    <a href="#">หน้าแรก</a>
+                </li>
+                <li>
+                    <a href="#">เกี่ยวกับเรา</a>
+                </li>
+                <li>
+                    <a href="#">ติดต่อเรา 10000-000</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container mx-auto">
+        <section class="section-hero relative">
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+                <h1 class="text-[#ECC8AF]  text-[64px]">อร่อยให้หก สกปรกให้สิบ</h1>
+                <button class="bg-[#ECC8AF] mt-10 text-[#BF1A2F] px-7 py-2 rounded text-[24px]">ฉันหิวแล้ว</button>
+            </div>
+            <img class="object-cover" src="./image/chicken.png" alt="chicken" height="600" />
+        </section>
+    
+        <section class="section-information grid place-items-center grid-rows-3 grid-cols-2">
+                <img style="width: 100%; height: 100%;" src="./image/knifemeat.png" alt="meat" width="600" height="1000" />
+                <div class="p-20 items-center">
+                    <h1 class="text-[48px] text-[#BF1A2F] text-center">ร้านไก่หาดเล็ก</h1>
+                    <p class="mt-5 text-[24px]">
+                        มีประสบการณ์การดำเนินกิจการในไทยมานาน 
+                        และมีการเติบโตอย่างต่อเนื่อง 
+                        กว่า 6,000 สาขา ครอบคลุมพื้นที่ทั่วประเทศ 
+                        และกว่า 1,600 สาขาในต่างประเทศ 
+                        ได้รับกระแสการตอบรับดีอย่างต่อเนื่อง 
+                        ครองเจ้าตลาดแฟรนไชส์มาอย่างยาวนาน
+                    </p>
+                </div>
+                
+                <div class="p-20 items-center">
+                    <h1 class="text-[48px] text-[#BF1A2F] text-center">คนขาย  อมยิ้ม <br />
+                        คนกิน   อมทุกข์</h1>
+                </div>
+                <img style="width: 100%; height: 100%;" src="./image/chicken-grill.png" class="object-cover" alt="meat" width="600" height="1000" />
+    
+                <img style="width: 100%; height: 100%;" src="./image/headach.png" alt="meat" width="600" height="1000" />
+                <div class="p-20">
+                    <h1 class="text-[48px] text-[#BF1A2F] text-center">คำแรกขึ้นสมอง คำที่สองขึ้นสวรรค์</h1>
+                </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
